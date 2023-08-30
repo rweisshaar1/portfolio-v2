@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function AboutMe () {
+export default function Resume () {
 
   return(
     <>
