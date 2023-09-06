@@ -10,7 +10,8 @@
 https://github.com/rweisshaar1/portfolio-v2
 
 ## Link to Working Website:
-https://note-taker-2000-rw-fa7979000359.herokuapp.com/ 
+https://effulgent-cuchufli-d37a38.netlify.app/
 
 ## Screen Shot:
+<img src='./public/images/screen-shot.png'>
 
