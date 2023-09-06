@@ -1,8 +1,16 @@
-# React + Vite
+# Portfolio Project Version 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Purpose:
+- The purpose of creating this website was to display my skills as web developer using React. 
 
-Currently, two official plugins are available:
+## Instructions for Use:
+- Open the URL and enjoy the website!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Link to GitHub Repo:
+https://github.com/rweisshaar1/portfolio-v2
+
+## Link to Working Website:
+https://note-taker-2000-rw-fa7979000359.herokuapp.com/ 
+
+## Screen Shot:
+
