@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -27,23 +27,29 @@ export default function Contact () {
   function submitForm(e) {
     // console.log(e)
     console.log(userData)
+    let errorsFound = 0 
     e.preventDefault()
     for (const key in userData) {
-      if (!userData[key]) {
-        return(checkErrors(true))
-      }
-      return(checkErrors(false))
-    }}
-
-    function checkErrors(boolean) {
-      if( boolean === true) {
-        setAlertState({type:"danger", message: "Please Enter all form fields!"})
-        console.log("Please enter all form fields")
-      } else {
-        setAlertState({type:"success", message: "Thank you for submitting the form!"})
-        console.log('Thank you for submitting the form!')
+      if (!userData[key] || !userData[key].length) {
+        errorsFound++
       }
     }
+    if( errorsFound > 0 ){
+      checkErrors(true)
+    } else {
+      checkErrors(false)
+    }
+  }
+
+  function checkErrors(boolean) {
+    if( boolean === true) {
+      setAlertState({type:"danger", message: "Please Enter all form fields!"})
+      console.log("Please enter all form fields")
+    } else {
+      setAlertState({type:"success", message: "Thank you for submitting the form!"})
+      console.log('Thank you for submitting the form!')
+    }
+  }
 
   return(
     <>
