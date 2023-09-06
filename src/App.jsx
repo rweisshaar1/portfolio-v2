@@ -45,10 +45,10 @@ function App(props) {
         marginBottom:'5px' }}>
         <Container style={{ display: "flex", justifyContent: "center" }}>
           <a href='https://github.com/rweisshaar1'>
-            <img id="minipng" style={{ marginRight:'5px' }} src='../src/assets/github-mark.png'></img>
+            <img id="minipng" style={{ marginRight:'5px' }} src='/images/github-mark.png'></img>
           </a>
           <a href='https://www.linkedin.com/in/robbie-weisshaar-86818328b/'>
-            <img id="minipng" style={{ marginLeft:'5px' }} src='../src/assets/li-in-bug.png'></img>
+            <img id="minipng" style={{ marginLeft:'5px' }} src='/images/li-in-bug.png'></img>
           </a>
         </Container>
       </footer>
