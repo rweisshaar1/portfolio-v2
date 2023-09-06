@@ -38,18 +38,18 @@ function App(props) {
       </header>
      
       <footer style={{
-        position:'absolute',
+        position:'fixed',
         left:0,
         bottom:0,
         right:0,
-        marginBottom:'30px' }}>
-        <Container style={{
-        display: "flex",
-        justifyContent: "center",
-
-      }}>
-          <img style={{ marginRight:'5px' }} src='../src/assets/github-mark.png'></img>
-          <img style={{ marginLeft:'5px' }} src='../src/assets/li-in-bug.png'></img>
+        marginBottom:'5px' }}>
+        <Container style={{ display: "flex", justifyContent: "center" }}>
+          <a href='https://github.com/rweisshaar1'>
+            <img id="minipng" style={{ marginRight:'5px' }} src='../src/assets/github-mark.png'></img>
+          </a>
+          <a href='https://www.linkedin.com/in/robbie-weisshaar-86818328b/'>
+            <img id="minipng" style={{ marginLeft:'5px' }} src='../src/assets/li-in-bug.png'></img>
+          </a>
         </Container>
       </footer>
     </>

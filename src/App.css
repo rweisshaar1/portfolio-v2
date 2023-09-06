@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+#minipng:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  opacity: .5;
+}
