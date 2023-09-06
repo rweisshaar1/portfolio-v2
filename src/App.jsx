@@ -50,6 +50,9 @@ function App(props) {
           <a href='https://www.linkedin.com/in/robbie-weisshaar-86818328b/'>
             <img id="minipng" style={{ marginLeft:'5px' }} src='/images/li-in-bug.png'></img>
           </a>
+          <a href='https://stackoverflow.com/users/22510937/rweisshaar1'>
+            <img id="minipng" style={{ marginLeft:'5px' }} src='/images/logo-stackoverflow.png'></img>
+          </a>
         </Container>
       </footer>
     </>

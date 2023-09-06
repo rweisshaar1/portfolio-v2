@@ -25,7 +25,7 @@ export default function Portfolio () {
     <h1 style={{marginTop:'70px'}}>PORTFOLIO:</h1>
       <Row>
       { cardInfo.map( info => (
-        <Card key={info.key} style={{ width: '18rem', margin:'auto', marginBottom:'10px', marginLeft:'auto', marginRight:'auto'}}>
+        <Card key={info.key} style={{ width: '18rem', margin:'auto', marginBottom:'40px', marginLeft:'auto', marginRight:'auto'}}>
           <a href={info.btn}>
           <Card.Img variant="top" src={`/images/${info.img}`}/>
           </a>
