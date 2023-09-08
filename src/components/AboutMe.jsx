@@ -10,10 +10,9 @@ export default function AboutMe () {
 
   return(
     <>
-    <Container>
+    <Container style={{display:'flex'}}>
       <Row>
-        
-        <Col style={{ marginLeft:'30px', marginTop:'30px' }} xs={6} md={4}>
+        <Col style={{ marginLeft:'30px', marginTop:'30px' }} xs={12} md={4}>
           <Image src="https://placehold.co/100x100" roundedCircle />
         </Col>
         <Col>

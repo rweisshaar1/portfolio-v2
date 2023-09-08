@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import { AboutMe, Contact, Portfolio, Resume } from './components';
 
-function App(props) {
+function App() {
 
 
   return (
@@ -24,15 +24,18 @@ function App(props) {
             </Routes>
           </BrowserRouter>
         </div>
-        <Navbar fixed="top" bg="dark" data-bs-theme="dark">
+        <Navbar collapseOnSelect expand='sm' fixed="top" bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="/">ROBBIE WEISSHAAR</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/">ABOUT ME</Nav.Link>
-            <Nav.Link href="/portfolio">PORTFOLIO</Nav.Link>
-            <Nav.Link href="/contact">CONTACT</Nav.Link>
-            <Nav.Link href="/resume">RESUME</Nav.Link>
-          </Nav>
+          <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+          <Navbar.Collapse id='responsive-navbar-nav'>
+            <Navbar.Brand href="/">ROBBIE WEISSHAAR</Navbar.Brand>
+            <Nav className="me-auto"  >
+              <Nav.Link href="/">ABOUT ME</Nav.Link>
+              <Nav.Link href="/portfolio">PORTFOLIO</Nav.Link>
+              <Nav.Link href="/contact">CONTACT</Nav.Link>
+              <Nav.Link href="/resume">RESUME</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
         </Navbar>
       </header>
@@ -45,13 +48,13 @@ function App(props) {
         marginBottom:'5px' }}>
         <Container style={{ display: "flex", justifyContent: "center" }}>
           <a href='https://github.com/rweisshaar1'>
-            <img id="minipng" style={{ marginRight:'5px' }} src='/images/github-mark.png'></img>
+            <img className='minipic' style={{ marginRight:'5px' }} src='/images/github-mark.png'></img>
           </a>
           <a href='https://www.linkedin.com/in/robbie-weisshaar-86818328b/'>
-            <img id="minipng" style={{ marginLeft:'5px' }} src='/images/li-in-bug.png'></img>
+            <img className='minipic' style={{ marginLeft:'5px' }} src='/images/li-in-bug.png'></img>
           </a>
           <a href='https://stackoverflow.com/users/22510937/rweisshaar1'>
-            <img id="minipng" style={{ marginLeft:'5px' }} src='/images/logo-stackoverflow.png'></img>
+            <img className='minipic' style={{ marginLeft:'5px' }} src='/images/logo-stackoverflow.png'></img>
           </a>
         </Container>
       </footer>
