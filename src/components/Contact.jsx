@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState, useRef } from 'react';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button'
 import Alert from 'react-bootstrap/Alert';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css' ;
+import emailjs from '@emailjs/browser';
 
 const defaultUser = {
   name:"",
@@ -14,6 +15,7 @@ const defaultUser = {
 }
 
 export default function Contact () {
+  const form = useRef();
   const [ userData, setDataState ] = useState(defaultUser);
 
   const [ alertState, setAlertState ] = useState({type: "", message:""})
@@ -23,6 +25,17 @@ export default function Contact () {
     setAlertState({type: "", message:""})
     setDataState({...userData, [e.target.name]: e.target.value}) 
   }
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_25wlrvf', 'contact_form', form.current)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   function submitForm(e) {
     // console.log(e)
@@ -37,6 +50,7 @@ export default function Contact () {
     if( errorsFound > 0 ){
       checkErrors(true)
     } else {
+      sendEmail
       checkErrors(false)
     }
   }
@@ -46,7 +60,7 @@ export default function Contact () {
       setAlertState({type:"danger", message: "Please Enter all form fields!"})
       console.log("Please enter all form fields")
     } else {
-      setAlertState({type:"success", message: "Thank you for submitting the form!"})
+      setAlertState({type:"success", message: "Thank you for submitting the form! I will get back to you shortly."})
       console.log('Thank you for submitting the form!')
     }
   }
@@ -57,7 +71,7 @@ export default function Contact () {
       <h1>CONTACT:</h1>
       <Card>
         <Card.Body>
-          <Form>
+          <Form ref={form}>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Name</Form.Label>
               <Form.Control type="text" name="name" placeholder="John Doe" value={userData.name} onChange={handleInputChange}/>

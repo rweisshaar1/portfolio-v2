@@ -12,10 +12,11 @@ export default function Resume () {
     <Container className={{ display:'flex', alignContent:'center' }}>
       <h1>RESUME:</h1>
       <Card>
-        <Card.Body>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, fugit. Quae, laudantium! Iure eum dolore inventore beatae cumque, dolor, obcaecati eaque eveniet saepe, ab earum nobis sunt labore porro nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem reiciendis rerum, aspernatur ipsum quisquam harum nihil impedit obcaecati voluptas explicabo quo corporis cumque quia officiis dolorum? Cupiditate asperiores adipisci obcaecati?</Card.Body>
+        <Card.Body>Attached is a downloadable pdf of my resume. Feel free to email me on my contact page with any questions.
         <div style={{ margin:'10px' }}>
           <a href={pdf}>RESUME</a>
         </div>
+        </Card.Body>
       </Card>
     </Container>
     </>

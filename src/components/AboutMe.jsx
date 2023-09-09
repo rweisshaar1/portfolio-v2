@@ -19,7 +19,13 @@ export default function AboutMe () {
           <Card xs={6} style={{ marginTop:'30px' }}>
             <Card.Body>
               <h3>ABOUT ME:</h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, fugit. Quae, laudantium! Iure eum dolore inventore beatae cumque, dolor, obcaecati eaque eveniet saepe, ab earum nobis sunt labore porro nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem reiciendis rerum, aspernatur ipsum quisquam harum nihil impedit obcaecati voluptas explicabo quo corporis cumque quia officiis dolorum? Cupiditate asperiores adipisci obcaecati?
+              I studied Web Development at the University of Minnesota Full Stack Web Development Bootcamp, under the instruction of Gary Almes. It was an amazing experience overall, and I am excited to start my journey as a Junior Web Developer. 
+                <div style={{fontWeight:'bold'}}>
+                My skills include: 
+                  <div style={{fontWeight:'normal'}}>
+                  HTML, JavaScript, CSS, Bootstrap, React, SQL, MongoDB, and GraphQL.
+                  </div>
+                </div>
               </Card.Body>
           </Card>
         </Col>
