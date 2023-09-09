@@ -6,6 +6,9 @@
 ## Instructions for Use:
 - Open the URL and enjoy the website!
 
+## Helper Code:
+- I used some code from the `emailjs` website in order to make my contact page email me.
+
 ## Link to GitHub Repo:
 https://github.com/rweisshaar1/portfolio-v2
 
