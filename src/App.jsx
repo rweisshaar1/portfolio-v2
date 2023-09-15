@@ -5,6 +5,7 @@ import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import './App.css'
 
 import { AboutMe, Contact, Portfolio, Resume } from './components';
 

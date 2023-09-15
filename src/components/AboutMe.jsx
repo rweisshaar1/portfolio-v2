@@ -12,11 +12,11 @@ export default function AboutMe () {
     <>
     <Container style={{display:'flex'}}>
       <Row>
-        <Col style={{ marginLeft:'30px', marginTop:'30px' }} xs={12} md={4}>
-          <Image src="https://placehold.co/100x100" roundedCircle />
+        <Col style={{ marginLeft:'5%', marginTop:'5%', margin:'3%' }} xs={12} md={4}>
+          <Image src="./images/profile-pic.jpg" height='300' width='200' rounded />
         </Col>
         <Col>
-          <Card xs={6} style={{ marginTop:'30px' }}>
+          <Card xs={6} style={{ marginTop:'5%', marginBottom:'10%', margin:'3%' }}>
             <Card.Body>
               <h3>ABOUT ME:</h3>
               I studied Web Development at the University of Minnesota Full Stack Web Development Bootcamp, under the instruction of Gary Almes. It was an amazing experience overall, and I am excited to start my journey as a Junior Web Developer. 
