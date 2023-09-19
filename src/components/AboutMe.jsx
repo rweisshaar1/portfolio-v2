@@ -13,7 +13,7 @@ export default function AboutMe () {
     <Container style={{display:'flex'}}>
       <Row>
         <Col style={{ marginLeft:'5%', marginTop:'5%', margin:'3%' }} xs={12} md={4}>
-          <Image src="./images/profile-pic.jpg" height='300' width='200' rounded />
+          <Image src="./images/profile-pic.jpg" height='300' width='200' thumbnail />
         </Col>
         <Col>
           <Card xs={6} style={{ marginTop:'5%', marginBottom:'10%', margin:'3%' }}>
