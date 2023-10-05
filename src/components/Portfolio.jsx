@@ -22,7 +22,26 @@ export default function Portfolio () {
   return(
     <>
     <Container className={{ display:'flex', alignContent:'center' }}>
-    <h1 style={{marginTop:'70px'}}>PORTFOLIO:</h1>
+    <h1 style={{marginTop:'70px', marginBottom:'5%'}}>PORTFOLIO:</h1>
+
+    <Col>
+      <Card style={{marginBottom:'40px'}}>
+        <Card.Header as="h5">ThinkSync</Card.Header>
+        <a href='https://thinksync-1e5fbc55e5f7.herokuapp.com/'>
+          <Card.Img variant="top" src={`/images/thinksyncpic.png`}/>
+        </a>
+        <Card.Body>
+          <Card.Title>An Online Web Application to help make Decisions</Card.Title>
+          <Card.Text>
+            Make any type of decision easier with ThinkSync using a "march madness" style decision tree.
+          </Card.Text>
+          <a href='https://thinksync-1e5fbc55e5f7.herokuapp.com/'>
+            <Button variant="primary">To Project</Button>
+          </a>
+        </Card.Body>
+      </Card>
+    </Col>
+
       <Row>
       { cardInfo.map( info => (
         <Card key={info.key} style={{ width: '18rem', margin:'auto', marginBottom:'40px', marginLeft:'auto', marginRight:'auto'}}>
