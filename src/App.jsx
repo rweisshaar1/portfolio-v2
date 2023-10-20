@@ -48,6 +48,7 @@ function App() {
         right:0,
         marginBottom:'5px' }}>
         <Container style={{ display: "flex", justifyContent: "center" }}>
+          {/* <img className='minipic' src ='/images/full-stack-web-development-certificate-coding-boot-camp.png'></img> */}
           <a href='https://github.com/rweisshaar1'>
             <img className='minipic' style={{ marginRight:'5px' }} src='/images/github-mark.png'></img>
           </a>
