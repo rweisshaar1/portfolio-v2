@@ -14,7 +14,7 @@ export default function Resume () {
       <Card>
         <Card.Body>Attached is a downloadable pdf of my resume. Feel free to email me on my contact page with any questions.
         <div style={{ margin:'10px' }}>
-          <a href={pdf}>RESUME</a>
+          <a href={pdf} target='_blank'>RESUME</a>
         </div>
         </Card.Body>
       </Card>
