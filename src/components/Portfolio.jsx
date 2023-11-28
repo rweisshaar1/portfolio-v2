@@ -24,27 +24,46 @@ export default function Portfolio () {
     <Container className={{ display:'flex', alignContent:'center' }}>
     <h1 style={{marginTop:'70px', marginBottom:'5%'}}>PORTFOLIO:</h1>
 
-    <Col>
-      <Card style={{marginBottom:'40px'}}>
-        <Card.Header as="h5">ThinkSync</Card.Header>
-        <a href='https://thinksync-1e5fbc55e5f7.herokuapp.com/'>
-          <Card.Img variant="top" src={`/images/thinksyncpic.png`}/>
-        </a>
-        <Card.Body>
-          <Card.Title>An Online Web Application to help make Decisions</Card.Title>
-          <Card.Text>
-            Make any type of decision easier with ThinkSync using a "march madness" style decision tree.
-          </Card.Text>
+    <Row>
+      <Col md='6'>
+        <Card style={{marginBottom:'40px', height:'525px'}}>
+            <Card.Header as="h5">Trek & Trail</Card.Header>
+            <a href='trek-trail.com'>
+              <Card.Img variant="top" src={`/images/trek-trail.png`}/>
+            </a>
+            <Card.Body>
+              <Card.Title>Kayaking Adventure Website</Card.Title>
+              <Card.Text>
+              Book your next kayaking adventure with Trek and Trail, located in Bayfield, WI.
+              </Card.Text>
+              <a href='trek-trail.com'>
+                <Button variant="primary">To Project</Button>
+              </a>
+            </Card.Body>
+          </Card>
+        </Col>
+      <Col md='6'>
+        <Card style={{marginBottom:'40px', height:'525px'}}>
+          <Card.Header as="h5">ThinkSync</Card.Header>
           <a href='https://thinksync-1e5fbc55e5f7.herokuapp.com/'>
-            <Button variant="primary">To Project</Button>
+            <Card.Img variant="top" src={`/images/thinksyncpic.png`}/>
           </a>
-        </Card.Body>
-      </Card>
-    </Col>
+          <Card.Body>
+            <Card.Title>An Online Web Application to help make Decisions</Card.Title>
+            <Card.Text>
+              Make any type of decision easier with ThinkSync using a "march madness" style decision tree.
+            </Card.Text>
+            <a href='https://thinksync-1e5fbc55e5f7.herokuapp.com/'>
+              <Button variant="primary">To Project</Button>
+            </a>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
 
       <Row>
       { cardInfo.map( info => (
-        <Card key={info.key} style={{ width: '18rem', margin:'auto', marginBottom:'40px', marginLeft:'auto', marginRight:'auto'}}>
+        <Card key={info.key} style={{ height:'25rem' , width: '18rem', margin:'auto', marginBottom:'40px', marginLeft:'auto', marginRight:'auto'}}>
           <a href={info.btn}>
           <Card.Img variant="top" src={`/images/${info.img}`}/>
           </a>
