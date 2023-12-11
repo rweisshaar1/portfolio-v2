@@ -27,7 +27,7 @@ export default function Portfolio () {
       <Col md='12'>
       <Card style={{marginBottom:'40px', height:'525px'}}>
             <Card.Header as="h5">Robbie Dubs Bass</Card.Header>
-            <a href='robbiedubsbass.com'>
+            <a href='https://robbiedubsbass.com'>
               <Card.Img variant="top" style={{width:'100%', height:'45vh', objectFit:'cover'}}src={`/images/robbiedubsbass.jpg`}/>
             </a>
             <Card.Body>
@@ -35,7 +35,7 @@ export default function Portfolio () {
               <Card.Text>
               Get in contact with Robbie to play bass on your next recording project.
               </Card.Text>
-              <a href='robbiedubsbass.com'>
+              <a href='https://robbiedubsbass.com'>
                 <Button  variant="primary">To Project</Button>
               </a>
             </Card.Body>
@@ -46,7 +46,7 @@ export default function Portfolio () {
       <Col md='6'>
         <Card style={{marginBottom:'40px', height:'525px'}}>
             <Card.Header as="h5">Trek & Trail</Card.Header>
-            <a href='trek-trail.com'>
+            <a href='https://trek-trail.com'>
               <Card.Img variant="top" src={`/images/trek-trail.png`}/>
             </a>
             <Card.Body>
@@ -54,7 +54,7 @@ export default function Portfolio () {
               <Card.Text>
               Book your next kayaking adventure with Trek and Trail, located in Bayfield, WI.
               </Card.Text>
-              <a href='trek-trail.com'>
+              <a href='https://trek-trail.com'>
                 <Button variant="primary">To Project</Button>
               </a>
             </Card.Body>
