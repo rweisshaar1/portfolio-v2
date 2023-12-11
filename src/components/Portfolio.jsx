@@ -23,7 +23,25 @@ export default function Portfolio () {
     <>
     <Container className={{ display:'flex', alignContent:'center' }}>
     <h1 style={{marginTop:'70px', marginBottom:'5%'}}>PORTFOLIO:</h1>
-
+    <Row>
+      <Col md='12'>
+      <Card style={{marginBottom:'40px', height:'525px'}}>
+            <Card.Header as="h5">Robbie Dubs Bass</Card.Header>
+            <a href='robbiedubsbass.com'>
+              <Card.Img variant="top" style={{width:'100%', height:'45vh', objectFit:'cover'}}src={`/images/robbiedubsbass.jpg`}/>
+            </a>
+            <Card.Body>
+              <Card.Title>Musician Portfolio Website</Card.Title>
+              <Card.Text>
+              Get in contact with Robbie to play bass on your next recording project.
+              </Card.Text>
+              <a href='robbiedubsbass.com'>
+                <Button  variant="primary">To Project</Button>
+              </a>
+            </Card.Body>
+          </Card>
+      </Col>
+    </Row>
     <Row>
       <Col md='6'>
         <Card style={{marginBottom:'40px', height:'525px'}}>
