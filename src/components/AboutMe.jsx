@@ -24,7 +24,7 @@ export default function AboutMe () {
                 <div style={{fontWeight:'bold'}}>
                 My skills include: 
                   <div style={{fontWeight:'normal'}}>
-                React, HTML, JavaScript, CSS, Bootstrap, SQL, MongoDB, and GraphQL.
+                Golang, React, HTML, HTMX, JavaScript, CSS, Bootstrap, MDBootstrap, SQL, PostgreSQL ,MongoDB, and GraphQL.
                   </div>
                 </div>
               </Card.Body>

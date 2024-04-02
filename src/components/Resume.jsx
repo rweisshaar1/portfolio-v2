@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css' ;
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
-import pdf from '../../src/assets/web-development-resume-2023.pdf'
+import pdf from '../../src/assets/Weisshaar-Resume-2024.pdf'
 
 
 
