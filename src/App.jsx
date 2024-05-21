@@ -52,7 +52,7 @@ function App() {
           <a href='https://github.com/rweisshaar1'>
             <img className='minipic' style={{ marginRight:'5px' }} src='/images/github-mark.png'></img>
           </a>
-          <a href='https://www.linkedin.com/in/robbie-weisshaar-86818328b/'>
+          <a href='https://www.linkedin.com/in/robert-weisshaar-86818328b/'>
             <img className='minipic' style={{ marginLeft:'5px' }} src='/images/li-in-bug.png'></img>
           </a>
           <a href='https://stackoverflow.com/users/22510937/rweisshaar1'>
