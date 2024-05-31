@@ -41,13 +41,8 @@ function App() {
         </Navbar>
       </header>
      
-      <footer style={{
-        position:'fixed',
-        left:0,
-        bottom:0,
-        right:0,
-        marginBottom:'5px' }}>
-        <Container style={{ display: "flex", justifyContent: "center" }}>
+      <footer className='footer'>
+        <div>
           {/* <img className='minipic' src ='/images/full-stack-web-development-certificate-coding-boot-camp.png'></img> */}
           <a href='https://github.com/rweisshaar1'>
             <img className='minipic' style={{ marginRight:'5px' }} src='/images/github-mark.png'></img>
@@ -58,7 +53,7 @@ function App() {
           <a href='https://stackoverflow.com/users/22510937/rweisshaar1'>
             <img className='minipic' style={{ marginLeft:'5px' }} src='/images/logo-stackoverflow.png'></img>
           </a>
-        </Container>
+        </div>
       </footer>
     </>
   )
