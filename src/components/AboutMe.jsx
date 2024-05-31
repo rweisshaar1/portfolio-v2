@@ -10,21 +10,23 @@ export default function AboutMe () {
 
   return(
     <>
-    <Container style={{display:'flex'}}>
+    <Container className='d-flex justify-content-end align-items-center'>
       <Row>
-        <Col style={{ marginLeft:'5%', marginTop:'7%', margin:'3%' }} xs={12} md={4}>
+        <Col xs={12} md={4}>
           <Image src="./images/profile-pic.jpg" height='300' width='200' thumbnail alt='A picture of Robbie Weisshaar'/>
           {/* <Image src="./images/full-stack-web-development-certificate-coding-boot-camp.png" /> */}
         </Col>
         <Col>
-          <Card xs={6} style={{ marginTop:'7%', marginBottom:'10%', margin:'3%' }}>
+          <Card xs={6}>
             <Card.Body>
-              <h3>ABOUT ME:</h3>
+              <h3 className='justify-content-center'>ABOUT ME:</h3>
+              <div className='text-start'>
               I studied Web Development at the University of Minnesota Full Stack Web Development Bootcamp, under the instruction of Gary Almes. I am currently working as a Freelance Web Developer. 
+              </div>
                 <div style={{fontWeight:'bold'}}>
                 My skills include: 
                   <div style={{fontWeight:'normal'}}>
-                Golang, React, HTML, HTMX, JavaScript, CSS, Bootstrap, MDBootstrap, SQL, PostgreSQL ,MongoDB, and GraphQL.
+                Golang, Python, React, HTML, HTMX, JavaScript, Docker, CSS, Bootstrap, MDBootstrap, SQL, PostgreSQL, MongoDB, and GraphQL.
                   </div>
                 </div>
               </Card.Body>
